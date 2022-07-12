@@ -16,7 +16,7 @@ app.use(session(
         resave: true,
         saveUninitialized: true,
         store: MongoStore.create({
-            mongoUrl: `mongodb+srv://${MONGO_USER}:${MONGO_PASS}@cluster0.cyfup.mongodb.net/${DB_NAME}?retryWrites=true&w=majority`,
+            mongoUrl: `mongodb+srv://${MONGO_USER}:${MONGO_PASS}@cluster0.krjoq.mongodb.net/${DB_NAME}retryWrites=true&w=majority`,
             ttl: 60 * 10 // 10 minutes
             })
     }
